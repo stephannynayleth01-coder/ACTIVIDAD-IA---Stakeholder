@@ -1,91 +1,75 @@
-# Análisis PESTEL
+# Análisis PESTEL: Sistema de Inventario y Mantenimiento para Laboratorio Académico
 
-## Contexto
+## Contexto del Proyecto
+El laboratorio académico cuenta con computadores, sensores, dispositivos electrónicos y herramientas de uso frecuente por estudiantes y docentes. Actualmente presenta deficiencias en el control de inventario, trazabilidad de mantenimientos, gestión de préstamos y actualización del estado de los activos. 
 
-El laboratorio académico dispone de computadores, sensores, dispositivos electrónicos, herramientas y otros elementos utilizados por estudiantes y docentes. Actualmente existen dificultades para controlar el inventario, realizar seguimiento al mantenimiento, gestionar préstamos y mantener actualizada la información sobre el estado de los activos.
+El presente análisis PESTEL identifica los factores externos críticos que condicionan el diseño, arquitectura y reglas del sistema.
 
-El análisis PESTEL permite identificar factores externos que podrían condicionar el desarrollo de un sistema de inventario y mantenimiento de activos.
+---
 
-## P - Político
+## 1. P - Político
 
 ### Factor 1: Políticas institucionales para la gestión de activos
+* **Impacto en el sistema:** Define la lógica y reglas de negocio obligatorias. El software debe acoplarse a los reglamentos existentes para la autorización de préstamos, tiempos límite, sanciones, flujos de mantenimiento y procesos formales de baja de equipos.
+* **Evidencia requerida:** Reglamento institucional de laboratorios, manual de procedimientos de inventario y políticas de préstamo.
 
-Posible impacto: La existencia de políticas internas sobre inventario, préstamo, mantenimiento o baja de equipos podría condicionar los procesos que deberá soportar el sistema.
+### Factor 2: Prioridades institucionales de inversión tecnológica
+* **Impacto en el sistema:** Determina el respaldo institucional para el desarrollo e implementación del proyecto. Garantiza la viabilidad de escalabilidad a largo plazo y la asignación de recursos para infraestructura.
+* **Evidencia requerida:** Plan de desarrollo institucional, proyectos aprobados y rubros presupuestales asignados a laboratorios.
 
-Evidencia necesaria: Reglamento institucional, manual de inventarios, políticas de préstamo y procedimientos de mantenimiento.
+---
 
-### Factor 2: Prioridades institucionales de inversión
+## 2. E - Económico
 
-Posible impacto: Las prioridades de la institución podrían influir en la decisión de desarrollar o implementar un sistema para la gestión de los activos.
+### Factor 1: Costos de mantenimiento y reparación de activos
+* **Impacto en el sistema:** Justifica la necesidad del módulo de mantenimiento. El sistema debe calcular el ciclo de vida útil y registrar costos operativos (repuestos, garantías, soportes técnicos) para evaluar la rentabilidad de reparar vs. reemplazar un activo.
+* **Evidencia requerida:** Histórico de facturas de reparación, registros de garantías y hoja de vida de equipos dañados.
 
-Evidencia necesaria: Plan institucional, proyectos aprobados y documentos relacionados con inversión en laboratorios o tecnología.
+### Factor 2: Costo de oportunidad por inactividad de equipos
+* **Impacto en el sistema:** Condiciona la urgencia de alertas automáticas en el software. La indisponibilidad de sensores o computadores afecta las clases y proyectos; el sistema debe minimizar el tiempo de parada técnica.
+* **Evidencia requerida:** Reportes de clases afectadas o retrasos en proyectos por falta de equipos operativos.
 
-## E - Económico
+---
 
-### Factor 1: Presupuesto disponible
+## 3. S - Social
 
-Posible impacto: El presupuesto disponible podría condicionar el alcance, las tecnologías y los recursos utilizados para desarrollar y mantener el sistema.
+### Factor 1: Flujo de interacción de estudiantes y docentes con los activos
+* **Impacto en el sistema:** Dicta la usabilidad y los roles de usuario. Dado que los préstamos son dinámicos y de alta frecuencia, el sistema requiere interfaces ágiles (ej. escaneo rápido) para evitar cuellos de botella en la entrega y recepción.
+* **Evidencia requerida:** Bitácoras actuales de préstamo, volumen de solicitudes diarias y caracterización de usuarios (docentes/estudiantes).
 
-Evidencia necesaria: Presupuesto, cotizaciones y costos estimados de implementación y mantenimiento.
+---
 
-### Factor 2: Costos de mantenimiento de los activos
+## 4. T - Tecnológico
 
-Posible impacto: Los costos asociados al mantenimiento podrían justificar la necesidad de realizar seguimiento a reparaciones, fechas, responsables y estado de los equipos.
+### Factor 1: Infraestructura tecnológica y de red disponible
+* **Impacto en el sistema:** Restringe la arquitectura del software (despliegue local vs. nube, servidor dedicado o compartido). Determina la disponibilidad de conectividad e infraestructura sobre la cual correrá la aplicación.
+* **Evidencia requerida:** Ficha técnica de servidores locales, topología de red del laboratorio y características de los equipos cliente.
 
-Evidencia necesaria: Registros históricos de mantenimiento, facturas, costos de reparación y registros de equipos dañados.
+### Factor 2: Integración con dispositivos, sensores y hardware del laboratorio
+* **Impacto en el sistema:** Obliga al sistema a considerar capacidades de integración (APIs, lectura de tags RFID, códigos QR o comunicación IoT) para registrar automáticamente el estado o presencia de los elementos electrónicos.
+* **Evidencia requerida:** Hojas técnicas de los sensores/dispositivos y protocolos de comunicación soportados.
 
-## S - Social
+---
 
-### Factor 1: Participación de estudiantes y docentes
+## 5. E - Ecológico
 
-Posible impacto: Los usuarios que solicitan y devuelven equipos condicionan la necesidad de registrar préstamos, responsables y devoluciones.
+### Factor 1: Gestión y disposición de residuos electrónicos (RAEE)
+* **Impacto en el sistema:** Exige un módulo de trazabilidad para equipos dados de baja. El sistema debe clasificar el hardware obsoleto o irreparable para cumplir con la ruta institucional de reciclaje y disposición segura de RAEE.
+* **Evidencia requerida:** Política institucional de gestión ambiental y normativa de residuos electrónicos.
 
-Evidencia necesaria: Registros de préstamos, entrevistas, encuestas y observación del proceso actual.
+---
 
-### Factor 2: Adopción del sistema por los usuarios
+## 6. L - Legal
 
-Posible impacto: El funcionamiento del sistema dependerá de que los usuarios registren y actualicen correctamente la información.
+### Factor 1: Protección de datos personales (Habeas Data)
+* **Impacto en el sistema:** Obliga a implementar controles de seguridad, encriptación y roles de acceso. Al almacenar información sensible de estudiantes y docentes (cédulas, correos, registros de responsabilidad), el sistema debe cumplir con la legislación de protección de datos.
+* **Evidencia requerida:** Política institucional de tratamiento de datos personales y normativa legal vigente.
 
-Evidencia necesaria: Entrevistas, encuestas y observación de las dificultades del proceso actual.
+---
 
-## T - Tecnológico
+## Factores Críticos de Mayor Impacto (Resumen Ejecutivo)
 
-### Factor 1: Infraestructura tecnológica disponible
+Si se evalúan los condicionantes mínimos para la viabilidad del proyecto, los dos factores determinantes son:
 
-Posible impacto: Los computadores, red, servidores y demás recursos disponibles podrían condicionar la forma de implementación del sistema.
-
-Evidencia necesaria: Inventario de infraestructura, características técnicas y disponibilidad de conectividad.
-
-### Factor 2: Integración con dispositivos y tecnologías del laboratorio
-
-Posible impacto: Los sensores y dispositivos existentes podrían generar necesidades de integración o de registro adicional de información.
-
-Evidencia necesaria: Documentación técnica, sistemas existentes y características de los dispositivos.
-
-## E - Ecológico
-
-### Factor 1: Gestión de residuos electrónicos
-
-Posible impacto: El sistema podría registrar activos que hayan llegado al final de su vida útil para facilitar los procesos institucionales de baja y disposición.
-
-Evidencia necesaria: Política ambiental, procedimientos de residuos electrónicos y registros de equipos dados de baja.
-
-### Factor 2: Vida útil de los equipos
-
-Posible impacto: El seguimiento del estado y mantenimiento puede ayudar a determinar cuándo un activo requiere reparación, reemplazo o retiro.
-
-Evidencia necesaria: Fechas de adquisición, historial de mantenimiento y registros de fallas.
-
-## L - Legal
-
-### Factor 1: Protección de datos personales
-
-Posible impacto: Si el sistema almacena datos de estudiantes, docentes o responsables de préstamos, deberá considerar las normas y políticas aplicables al tratamiento de datos personales.
-
-Evidencia necesaria: Identificación de los datos que serán almacenados, políticas institucionales y normativa aplicable.
-
-### Factor 2: Responsabilidad sobre los activos
-
-Posible impacto: Las normas o procedimientos institucionales sobre responsabilidad de los bienes podrían determinar qué información debe registrarse durante los préstamos.
-
-Evidencia necesaria: Reglamentos de préstamo, formatos actuales y manuales de control de activos.
+1. **Político (Políticas institucionales):** Gobierna **qué debe hacer** el sistema y bajo qué reglas de negocio operará obligatoriamente.
+2. **Tecnológico (Infraestructura e integración):** Gobierna **cómo y dónde** se construirá el sistema, definiendo sus límites técnicos y de arquitectura.
