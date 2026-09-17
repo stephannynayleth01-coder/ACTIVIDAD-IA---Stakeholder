@@ -1,6 +1,6 @@
-# Pain Points
+Pain Points
 
-## 1. Estudiantes usuarios del laboratorio
+ 1. Estudiantes usuarios del laboratorio
 
 **Pain point:**
 No conocer el estado real de un equipo antes de utilizarlo.
@@ -11,9 +11,9 @@ El estudiante puede iniciar una práctica con un equipo que presenta fallas, gen
 **Decisión que necesita tomar:**
 Determinar si el equipo está realmente disponible para ser utilizado.
 
----
 
-## 2. Docentes del laboratorio
+
+2. Docentes del laboratorio
 
 **Pain point:**
 Dificultad para planificar prácticas que requieren varios equipos simultáneamente.
@@ -24,9 +24,8 @@ La práctica puede tener que modificarse o reprogramarse si alguno de los equipo
 **Decisión que necesita tomar:**
 Determinar si los equipos necesarios estarán disponibles para realizar la práctica en el momento requerido.
 
----
 
-## 3. Administrador / encargado del laboratorio
+ 3. Administrador / encargado del laboratorio
 
 **Pain point:**
 Puede existir diferencia entre la información registrada y la situación física real del equipo.
@@ -37,9 +36,9 @@ El administrador puede tomar decisiones utilizando información desactualizada y
 **Decisión que necesita tomar:**
 Determinar si la información registrada sobre los activos corresponde con su situación real.
 
----
 
-## 4. Institución
+
+4. Institución
 
 **Pain point:**
 Dificultad para planificar el presupuesto de mantenimiento y renovación.
@@ -50,9 +49,9 @@ Puede dificultarse la asignación de recursos económicos y retrasarse la decisi
 **Decisión que necesita tomar:**
 Determinar cómo distribuir los recursos destinados al mantenimiento y renovación de los activos.
 
----
 
-## 5. Personal de mantenimiento
+
+5. Personal de mantenimiento
 
 **Pain point:**
 Dificultad para conocer qué equipos tienen mantenimiento pendiente.
@@ -63,9 +62,9 @@ Algunos equipos pueden permanecer más tiempo del necesario sin recibir mantenim
 **Decisión que necesita tomar:**
 Determinar qué equipos requieren mantenimiento y cuáles deben ser atendidos con mayor prioridad.
 
----
 
-## 6. Proveedores de equipos y repuestos
+
+ 6. Proveedores de equipos y repuestos
 
 **Pain point:**
 No tienen visibilidad sobre el historial de fallas que podría justificar el reemplazo de un componente.
@@ -76,7 +75,10 @@ Puede dificultarse identificar el componente adecuado o determinar si correspond
 **Decisión que necesita tomar:**
 Determinar qué componente requiere reparación o reemplazo a partir del historial del equipo.
 
----
+
+
+
+
 
 # Tabla de trazabilidad de Pain Points
 
