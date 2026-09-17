@@ -1,4 +1,5 @@
-*Posibles preguntas difíciles 01 - Stakeholders
+16/09
+*Posibles preguntas difíciles 01 - Stakeholders*
 
 ¿Quién podría bloquear el proyecto?
 La institución podría hacerlo porque tiene poder sobre la viabilidad y los recursos. 
