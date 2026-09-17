@@ -1,7 +1,5 @@
 # Evidencias del Análisis PESTEL: Sistema de Inventario y Mantenimiento
 
-Este documento detalla la sustentación, los supuestos pendientes de validar y la evidencia necesaria para los factores externos identificados en el análisis PESTEL del laboratorio académico.
-
 ---
 
 ## 1. Político — Políticas institucionales para la gestión de activos
