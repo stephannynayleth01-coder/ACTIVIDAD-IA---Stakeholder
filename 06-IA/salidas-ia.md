@@ -20,4 +20,14 @@
 
     <img width="638" height="532" alt="image" src="https://github.com/user-attachments/assets/c949ab3f-cbfc-403a-b1fe-07d53936b841" />
 
+6. generacion de las opciones de pain points para cada stackeholder
+   <img width="346" height="285" alt="image" src="https://github.com/user-attachments/assets/1c901e67-a516-42ee-88a5-14c5e28c4772" />
+   
 
+8. generacion de la tabla de trazabilidad con losm pain points escogidos
+   <img width="332" height="307" alt="image" src="https://github.com/user-attachments/assets/7207a033-78dd-49a9-b179-75fcf8f8ebd1" />
+   
+9. generacion de las 2-3 alternativas de problem-solution fit
+    <img width="530" height="283" alt="image" src="https://github.com/user-attachments/assets/82ed02b9-22de-4980-bfcf-760e87386039" />
+   
+   
