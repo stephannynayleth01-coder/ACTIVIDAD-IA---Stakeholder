@@ -67,9 +67,3 @@ El presente análisis PESTEL identifica los factores externos críticos que cond
 
 ---
 
-## Factores Críticos de Mayor Impacto (Resumen Ejecutivo)
-
-Si se evalúan los condicionantes mínimos para la viabilidad del proyecto, los dos factores determinantes son:
-
-1. **Político (Políticas institucionales):** Gobierna **qué debe hacer** el sistema y bajo qué reglas de negocio operará obligatoriamente.
-2. **Tecnológico (Infraestructura e integración):** Gobierna **cómo y dónde** se construirá el sistema, definiendo sus límites técnicos y de arquitectura.
